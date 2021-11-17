@@ -8,18 +8,31 @@ export default function Portfolio() {
       <h2>These are some of the projects that I have been involved with:</h2>
 
       <ul>
-        <li>Featured</li>
+        <li className="active">Featured</li>
         <li>Featured</li>
         <li>Featured</li>
       </ul>
       <div className="container">
-        <div className="item">
-          <img src="ka1.png" alt=""/>
-          <h3>Test name</h3>
+        <div className="imgContainer">
+          <img src="assets/ka1.png" alt=""></img>
+          <h3>KickAbout</h3>
         </div>
-      </div>
+        <div className="imgContainer">
+          <img src="assets/ka1.png" alt=""></img>
+          <h3>KickAbout</h3>
+        </div>
+        <div className="imgContainer">
+          <img src="assets/ka1.png" alt=""></img>
+          <h3>KickAbout</h3>
+        </div>
+        <div className="imgContainer">
+          <img src="assets/ka1.png" alt=""></img>
+          <h3>KickAbout</h3>
+        </div>
+        
+        </div>
 
-      <a href="#portfolio">
+      <a href="#contact">
         <ArrowDownward className="icon"/>
       </a>
     </div>
