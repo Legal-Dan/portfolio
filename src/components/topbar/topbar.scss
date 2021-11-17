@@ -7,7 +7,8 @@
   color: white;
   position: fixed;
   top: o;
-  z-index: 2;
+  z-index: 3;
+  transition: all 1s ease;
 
   .wrapper{
     padding: 10px 30px;
@@ -44,5 +45,41 @@
       }
     }
   }
+  .right{
+    .hamburger{
+      width: 32px;
+      height: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      span{
+        width: 100px;
+        height: 3px;
+        background-color: white;
+        transform-origin: left;
+        transition: all 2s ease;
+      }
+    }
+  }
+  &.active{
+    background-color: white;
+    color: $mainColor;
 
+    .hamburger{
+      span{
+        &:first-child{
+          background-color: $mainColor;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2){
+          opacity: 0;
+        }
+        &:last-child{
+          background-color: $mainColor;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
 }
