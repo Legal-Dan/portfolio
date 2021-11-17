@@ -1,3 +1,27 @@
 .portfolio{
-  background-color: lightcoral;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1{
+    font-size: 50px;
+  }
+
+  a{
+    position: absolute;
+    bottom: 10px;
+    
+    .icon{
+      font-size: 58px;
+      color: black;
+      animation: arrowBlink 2s infinite;
+    }
+    @keyframes arrowBlink {
+      to{
+        opacity: 0%;
+      }
+      
+    }
+  }
 }
