@@ -1,6 +1,7 @@
 .intro{
   background-color: rgb(241, 241, 121);
   display: flex;
+  position: relative;
 
   .left{
     flex: 0.5;
@@ -26,7 +27,7 @@
 
   .right{
     flex: 0.5;
-    position: relative;
+
     .wrapper{
       width: 100%;
       height: 100%;
@@ -64,21 +65,23 @@
       }
 
     }
-    a{
-      position: absolute;
-      bottom: 10px;
+  }
       
-      .icon{
-        font-size: 58px;
-        color: black;
-        animation: arrowBlink 2s infinite;
-      }
-      @keyframes arrowBlink {
-        to{
-          opacity: 0%;
-        }
-        
+
+  a{
+    position: absolute;
+    bottom: 10px;
+      
+    .icon{
+      font-size: 58px;
+      color: black;
+      animation: arrowBlink 2s infinite;
+    }
+    @keyframes arrowBlink {
+      to{
+        opacity: 0%;
       }
     }
   }
+
 }
