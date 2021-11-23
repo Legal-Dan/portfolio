@@ -3,6 +3,7 @@ import { ArrowDownward } from "@material-ui/icons";
 import PortfolioList from "../portfolioList/PortfolioList";
 import { useEffect, useState } from "react";
 import { featuredPortfolio, rubyPortfolio, reactPortfolio, jsPortfolio, otherPortfolio } from "../../data";
+import { SRLWrapper } from "simple-react-lightbox";
 
 export default function Portfolio() {
   const [selected,setSelected] = useState("featured")
@@ -70,11 +71,12 @@ export default function Portfolio() {
       <div className="container">
         {data.map((d) => (
 
-
-        <div className="imgContainer">
-          <img src={d.img} alt=""></img>
-          <h3>{d.title}</h3>
-        </div>
+          <SRLWrapper>
+            <div className="imgContainer">
+              <img src={d.img} alt={d.alt}></img>
+              <h3>{d.title}</h3>
+            </div>
+          </SRLWrapper>
         ))}
         
         </div>
